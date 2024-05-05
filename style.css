@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
 }
+/*
+old code
 /* whole body font*/
 body {
   background: #1f2235;
@@ -70,3 +72,120 @@ body {
   border-radius: 0.5rem;
 }
 
+*/
+body {
+  background: #1f2235;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Main Heading Font */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+/* Navigation */
+.navigation-link {
+  border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+}
+
+/* Main Container height */
+.main-container {
+  height: auto;
+  padding: 2rem 0;
+}
+
+/* Aligning items in main row */
+.main_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Changing Name Font size */
+.main_row h1 {
+  font-size: 3rem;
+}
+
+/* Making the main image the size of the screen */
+.main_row img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* About Section */
+.about {
+  background: #313552;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.about .row {
+  flex-direction: column;
+}
+
+.about .col-6 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.card {
+  border-bottom: 8px solid #f5ba09;
+}
+
+/* Social Media Section */
+#social-media {
+  background: #313552;
+  padding: 2rem;
+}
+
+/* Add color to Social Media Links */
+.media_link {
+  padding: 1rem;
+  max-width: 100%;
+  margin-left: 0;
+  border: 2px solid #f5ba09;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  /* Tablet and larger screens */
+  .main_row {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .main_row h1 {
+    font-size: 5rem;
+  }
+
+  .main_row img {
+    width: auto;
+    height: 100vh;
+    max-width: none;
+  }
+
+  .about .row {
+    flex-direction: row;
+  }
+
+  .about .col-6 {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .media_link {
+    max-width: 15rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+}
